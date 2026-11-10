@@ -54,5 +54,6 @@ class MoneyFormatTest {
 
     @Test fun rateUsesFourDecimals() {
         assertEquals("88.6800", MoneyFormat.rate(88.68, us))
+        assertEquals("0.010689", MoneyFormat.rate(0.0106894, us))
     }
 }

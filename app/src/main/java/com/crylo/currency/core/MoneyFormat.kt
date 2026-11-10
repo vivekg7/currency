@@ -40,9 +40,15 @@ object MoneyFormat {
     fun plain(value: Double, code: String, locale: Locale): String =
         formatter(value, Currencies.decimals(code), locale, grouping = false).format(value)
 
-    /** A rate like `1 USD = 88.6800 INR`: four decimals, more for small rates. */
-    fun rate(value: Double, locale: Locale): String =
-        formatter(value, 4, locale, grouping = true).format(value)
+    /**
+     * A rate like `1 USD = 88.6800 INR`: four decimals, and five significant digits for
+     * rates below 1 so a chart's low and high (0.010312 vs 0.010689) stay distinguishable.
+     */
+    fun rate(value: Double, locale: Locale): String {
+        val f = formatter(value, 4, locale, grouping = true)
+        if (abs(value) < 1.0) f.maximumFractionDigits = (fractionDigits(value, 4) + 2).coerceAtMost(MAX_DIGITS)
+        return f.format(value)
+    }
 
     private fun formatter(value: Double, decimals: Int, locale: Locale, grouping: Boolean): DecimalFormat {
         val f = NumberFormat.getNumberInstance(locale) as DecimalFormat
