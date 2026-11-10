@@ -1,0 +1,21 @@
+A currency converter without ads, tracking or an account.
+
+Type an amount into any currency in your list and every other row updates at once.
+The keypad understands arithmetic, so 1200×3+50 works without leaving the app.
+
+<b>Features</b>
+<ul>
+<li>160+ currencies, including INR, AED, SAR and every other common one</li>
+<li>Multi-currency view: convert into all of your currencies at once</li>
+<li>Built-in calculator: + − × ÷, parentheses and %</li>
+<li>Works offline after the first download; always shows the date and source of the rates</li>
+<li>Refreshes by itself once new rates are published, or pull down to refresh</li>
+<li>History chart for any pair: 1 month, 6 months, 1 year, 5 years</li>
+<li>Search currencies by code, name or country; drag to reorder</li>
+<li>Material You colours and dark theme</li>
+</ul>
+
+<b>Privacy</b>
+The only permission is internet access, used to download public exchange rates from
+Frankfurter (api.frankfurter.dev), with fawazahmed0's exchange-api as a fallback. No
+analytics, no ads, no account. Free and open source (MIT).
