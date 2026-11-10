@@ -1,1 +1,42 @@
-<resources><string name="app_name">Currency</string></resources>
+<resources>
+    <string name="app_name">Currency</string>
+
+    <!-- Main screen -->
+    <string name="action_add">Add or remove currencies</string>
+    <string name="action_reorder">Drag to reorder %1$s</string>
+    <string name="action_chart">History of %1$s to %2$s</string>
+    <string name="rates_as_of">Rates as of %1$s (%2$s)</string>
+    <string name="rates_updating">Updating rates…</string>
+    <string name="rates_update_failed">Couldn\'t update. Showing saved rates.</string>
+    <string name="rates_outdated">These rates are several days old. Pull down to refresh.</string>
+    <string name="rates_none">No rates yet. Connect to the internet and pull down to refresh.</string>
+    <string name="rates_none_failed">Couldn\'t download rates. Check your connection and pull down to try again.</string>
+    <string name="no_rate">—</string>
+    <string name="result_prefix">= %1$s</string>
+    <string name="key_backspace">Delete</string>
+
+    <!-- Picker -->
+    <string name="picker_title">Currencies</string>
+    <string name="picker_search">Search by code, name or country</string>
+    <string name="picker_clear">Clear search</string>
+    <string name="picker_none">No currency matches \"%1$s\"</string>
+    <string name="picker_selected">Your currencies</string>
+    <string name="picker_all">All currencies</string>
+    <string name="action_back">Back</string>
+
+    <!-- Detail -->
+    <string name="detail_title">%1$s to %2$s</string>
+    <string name="detail_swap">Swap currencies</string>
+    <string name="detail_rate">1 %1$s = %2$s %3$s</string>
+    <string name="range_1m">1M</string>
+    <string name="range_6m">6M</string>
+    <string name="range_1y">1Y</string>
+    <string name="range_5y">5Y</string>
+    <string name="detail_low">Low</string>
+    <string name="detail_high">High</string>
+    <string name="detail_change">Change</string>
+    <string name="detail_failed">Couldn\'t load history. It needs an internet connection.</string>
+    <string name="detail_empty">No history for this pair.</string>
+    <string name="detail_retry">Retry</string>
+    <string name="detail_source">History from Frankfurter</string>
+</resources>
